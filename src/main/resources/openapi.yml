@@ -1,0 +1,63 @@
+openapi: 3.0.3
+info:
+  title: RT Samples API -
+  description: API de demonstração técnica utilizando Arquitetura Hexagonal e Spring Boot.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8080
+    description: Servidor Local de Desenvolvimento
+
+tags:
+  - name: Hello
+    description: Endpoints de saudação e teste de conectividade
+  - name: Tools
+    description: Integrações nativas com o Sistema Operacional
+
+paths:
+  /api/v1/hello:
+    get:
+      tags:
+        - Hello
+      summary: Retorna uma saudação do sistema
+      operationId: getHello
+      responses:
+        '200':
+          description: Operação realizada com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloResponse'
+
+  /api/v1/tools/calc:
+    post:
+      tags:
+        - Tools
+      summary: Dispara a execução da calculadora nativa
+      operationId: runCalculator
+      responses:
+        '200':
+          description: Processo disparado com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Processo calc.exe iniciado"
+
+components:
+  schemas:
+    HelloResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "SIAAP System Ready!"
+        timestamp:
+          type: string
+          format: date-time
+        architecture:
+          type: string
+          example: "Hexagonal"

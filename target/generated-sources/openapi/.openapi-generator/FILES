@@ -1,0 +1,5 @@
+src/main/java/com/rt/samples/domain/models/HelloResponse.java
+src/main/java/com/rt/samples/domain/models/RunCalculator200Response.java
+src/main/java/com/rt/samples/infrastructure/adapters/in/api/ApiUtil.java
+src/main/java/com/rt/samples/infrastructure/adapters/in/api/HelloApi.java
+src/main/java/com/rt/samples/infrastructure/adapters/in/api/ToolsApi.java

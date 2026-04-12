@@ -1,0 +1,34 @@
+#spring:
+#  application:
+#    name: rt-sb-java-samples-bknd
+#  profiles:
+#    active: local
+
+# Configurações do Servidor
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# OpenAPI / Swagger UI (Essencial para os recrutadores testarem)
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: alpha
+    tagsSorter: alpha
+    displayRequestDuration: true
+
+# Configuração para sua experiência com o SO (Calc.exe / C++)
+app:
+  external-tools:
+    path: "C:/Windows/System32/calc.exe"
+    enabled: true
+
+# Logs para facilitar seu debug no Postman
+logging:
+  level:
+    root: INFO
+    com.rt.samples: DEBUG
+    org.springframework.web: INFO
