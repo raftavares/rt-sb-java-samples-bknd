@@ -1,10 +1,11 @@
 com\rt\samples\infrastructure\adapters\in\api\ToolsApi.class
 com\rt\samples\infrastructure\adapters\in\HelloController.class
 com\rt\samples\infrastructure\adapters\out\DesktopAdapter.class
-com\rt\samples\application\ports\out\ExternalToolPort.class
 com\rt\samples\infrastructure\RtSbJavaSamplesApplication.class
 com\rt\samples\infrastructure\adapters\in\api\HelloApi.class
 com\rt\samples\domain\models\HelloResponse.class
 com\rt\samples\domain\models\RunCalculator200Response.class
 com\rt\samples\infrastructure\adapters\in\api\ApiUtil.class
 com\rt\samples\infrastructure\adapters\in\ToolsController.class
+com\rt\samples\application\ports\out\ExternalToolPort.class
+com\rt\samples\infrastructure\config\CorsConfig.class

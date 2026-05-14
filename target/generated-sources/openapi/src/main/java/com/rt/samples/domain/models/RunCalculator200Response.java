@@ -20,7 +20,7 @@ import jakarta.annotation.Generated;
  */
 
 @JsonTypeName("runCalculator_200_response")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-04-12T01:09:55.665993100-03:00[America/Sao_Paulo]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-04-14T22:30:17.418006700-03:00[America/Sao_Paulo]")
 public class RunCalculator200Response {
 
   private String status;
