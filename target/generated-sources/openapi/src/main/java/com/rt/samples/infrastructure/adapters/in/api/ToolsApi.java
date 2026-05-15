@@ -32,7 +32,7 @@ import java.util.Map;
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-04-14T22:30:17.418006700-03:00[America/Sao_Paulo]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-05-15T15:02:38.011073-03:00[America/Sao_Paulo]")
 @Validated
 @Tag(name = "Tools", description = "Integrações nativas com o Sistema Operacional")
 public interface ToolsApi {
